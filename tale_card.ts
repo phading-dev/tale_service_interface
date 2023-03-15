@@ -48,7 +48,7 @@ export let TALE_CARD_MEDATA: MessageDescriptor<TaleCardMedata> = {
 export interface QuickTaleCard {
   metadata?: TaleCardMedata,
   text?: string,
-  images?: Array<string>,
+  imagePaths?: Array<string>,
 }
 
 export let QUICK_TALE_CARD: MessageDescriptor<QuickTaleCard> = {
@@ -63,7 +63,7 @@ export let QUICK_TALE_CARD: MessageDescriptor<QuickTaleCard> = {
       primitiveType: PrimitiveType.STRING,
     },
     {
-      name: 'images',
+      name: 'imagePaths',
       primitiveType: PrimitiveType.STRING,
       isArray: true,
     },

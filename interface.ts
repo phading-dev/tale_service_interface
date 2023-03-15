@@ -7,14 +7,14 @@ import { TaleContext, TALE_CONTEXT } from './tale_context';
 import { TaleReaction, TALE_REACTION } from './tale_reaction';
 
 export interface UploadImageForTaleResponse {
-  url?: string,
+  imagePath?: string,
 }
 
 export let UPLOAD_IMAGE_FOR_TALE_RESPONSE: MessageDescriptor<UploadImageForTaleResponse> = {
   name: 'UploadImageForTaleResponse',
   fields: [
     {
-      name: 'url',
+      name: 'imagePath',
       primitiveType: PrimitiveType.STRING,
     },
   ]
@@ -37,7 +37,7 @@ export let UPLOAD_IMAGE_FOR_TALE: ServiceDescriptor = {
 
 export interface QuickLayoutTaleToCreate {
   text?: string,
-  images?: Array<string>,
+  imagePaths?: Array<string>,
 }
 
 export let QUICK_LAYOUT_TALE_TO_CREATE: MessageDescriptor<QuickLayoutTaleToCreate> = {
@@ -48,7 +48,7 @@ export let QUICK_LAYOUT_TALE_TO_CREATE: MessageDescriptor<QuickLayoutTaleToCreat
       primitiveType: PrimitiveType.STRING,
     },
     {
-      name: 'images',
+      name: 'imagePaths',
       primitiveType: PrimitiveType.STRING,
       isArray: true,
     },

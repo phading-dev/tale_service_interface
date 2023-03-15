@@ -35,7 +35,7 @@
       "name": "text",
       "type": "string"
     }, {
-      "name": "images",
+      "name": "imagePaths",
       "type": "string",
       "isArray": true
     }]

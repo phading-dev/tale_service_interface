@@ -2,7 +2,7 @@
   "name": "UploadImageForTaleResponse",
   "message": {
     "fields": [{
-      "name": "url",
+      "name": "imagePath",
       "type": "string"
     }]
   }
@@ -27,7 +27,7 @@
       "name": "text",
       "type": "string"
     }, {
-      "name": "images",
+      "name": "imagePaths",
       "type": "string",
       "isArray": true
     }]
