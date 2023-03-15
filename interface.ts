@@ -149,12 +149,17 @@ export let GET_QUICK_TALE: ServiceDescriptor = {
 }
 
 export interface GetRecommendedQuickTalesRequestBody {
+  personaId?: string,
   context?: TaleContext,
 }
 
 export let GET_RECOMMENDED_QUICK_TALES_REQUEST_BODY: MessageDescriptor<GetRecommendedQuickTalesRequestBody> = {
   name: 'GetRecommendedQuickTalesRequestBody',
   fields: [
+    {
+      name: 'personaId',
+      primitiveType: PrimitiveType.STRING,
+    },
     {
       name: 'context',
       messageType: TALE_CONTEXT,

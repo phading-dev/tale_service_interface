@@ -103,6 +103,9 @@
   "name": "GetRecommendedQuickTalesRequestBody",
   "message": {
     "fields": [{
+      "name": "personaId",
+      "type": "string"
+    }, {
       "name": "context",
       "type": "TaleContext",
       "import": "./tale_context"
